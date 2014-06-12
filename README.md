@@ -1,2 +1,2 @@
-ColdFusion Code Snippet
+ColdFusion Code Snippets
 ==========
