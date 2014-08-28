@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Html Template</title>
+</head>
+<body>
+
+	<h1>Html Template</h1>
+	<p>It's a good solution for using js to create new row when we bind a button.</p>
+	<script type="application/template" class="template">
+		<tr>
+			<td>
+				<input type="hidden" name="sidList" value="" />
+			</td>
+			<td>
+				<input type="text" name="mailList" />
+			</td>
+			<td>&nbsp;</td>
+		</tr>
+	</script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var _newRowHtmlTemplate = $("script.template").clone().html();
+		});
+	</script>
+</body>
+</html>
